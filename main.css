@@ -26,6 +26,7 @@ body {
     opacity: 0;
 	transition: 1000ms opacity;
     z-index: 98;
+	width: 100%;
 }
 
 .box {
