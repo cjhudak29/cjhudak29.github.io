@@ -112,6 +112,10 @@ h3 {
     
 }
 
+.imageHeader {
+    width: 100%;
+}
+
 .header_image {
 	width: 100%;
 	position: relative;
