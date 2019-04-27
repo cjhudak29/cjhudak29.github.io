@@ -101,11 +101,11 @@ h3 {
 }
 
 .par {
-    width: 100%;
+    width: 100vw;
   height: 90vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% auto;
+  background-size: cover;
   background-attachment: fixed;
     
     
