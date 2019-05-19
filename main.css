@@ -282,7 +282,7 @@ a.emailFooter:link, a.emailFooter:visited, a.emailFooter:hover a.emailFooter:act
     transition: .7s;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
 }
-.box:hover{
+.box:hover, .box:focus{
     flex: 7;
     height: 400px;
 }
