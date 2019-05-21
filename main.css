@@ -337,3 +337,9 @@ p {
         flex: 7;
     }
 }
+
+.chdlogo {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
