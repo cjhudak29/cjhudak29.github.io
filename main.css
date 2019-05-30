@@ -195,6 +195,8 @@ p {
   z-index: 10;
   clip-path: polygon(0 5%, 100% 0, 100% calc(100% - 10vw), 0 100%);
   margin-bottom: -10vw;
+      -webkit-clip-path: url(#cross);
+
 }
 
 
@@ -206,6 +208,8 @@ p {
   z-index: 10;
   clip-path: polygon(0 5%, 100% 0, 100% calc(100% - 10vw), 0 100%);
   margin-bottom: -10vw;
+      -webkit-clip-path: url(#cross);
+
 }
 
 .three {
@@ -214,6 +218,8 @@ p {
   position: relative;
   z-index: 10;
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+      -webkit-clip-path: url(#cross);
+
 }
 
 .footer{
