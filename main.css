@@ -190,7 +190,7 @@ p {
 /*sections*/
 .one {
     margin: 0 auto;
-    background: #4DEAFF;
+    /*background: #4DEAFF;*/
   position: relative;
   z-index: 10;
   clip-path: polygon(0 5%, 100% 0, 100% calc(100% - 10vw), 0 100%);
@@ -199,7 +199,7 @@ p {
 
 }
 
-
+/*
 
 .two {
     margin: 0 auto;
@@ -221,11 +221,14 @@ p {
       -webkit-clip-path: url(#cross);
 
 }
-
+*/
 .footer{
     z-index: 11;
     margin: 0 auto;
     width: 90%;
     padding-top: 25px;
     padding-bottom: 25px;
+    border-top-style: solid;
+    border-width: thin;
+    border-color: black;
 }
