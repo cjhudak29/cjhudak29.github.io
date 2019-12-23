@@ -155,7 +155,8 @@ body {
     }
     
     .pokedex {
-        width: 49%;
+        width: 45%;
+        padding: 5px;
     }
 
 /* Full-width containers */
