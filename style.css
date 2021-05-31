@@ -66,6 +66,7 @@ header h1 {
     padding: 15px;
     background-color: gray;
     border-radius: 5px;
+    width: 100%;
 }
 
 header.headerImg {
