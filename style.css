@@ -1,216 +1,312 @@
-* {
-  box-sizing: border-box;
-}
-
-/* Set a background color */
+html,
 body {
-  background-color: whitesmoke;
-  font-family: courier;
-    width: 100%;
     margin: 0 auto;
-    line-height: 1.5em;
+    font-size: 24pt;
+    padding: 0px;
+    color: #151412;
+    background-color: #fdfcfa;
+    font-family: 'Quesha', sans-serif;
+    line-height: 1.2em;
+    height: 100%;
 }
 
-.title {
-    letter-spacing: .2em;
+html[data-theme='dark'] {
+    background: #000;
+    filter: invert(1) hue-rotate(180deg)
 }
 
-.header {
-    width: 100%;
+
+/*Applied Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.asp */
+
+header {
+    height: 75%;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    transition: 1s;
+    animation: fade2 1s linear .5s 1 normal forwards;
 }
 
-.bio {
-    margin: 0 auto;
-    width: 90%;
-    line-height: 2em;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-      border-top: 4px solid black;
-      border-bottom: 4px solid black;
-
-
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  background-color: black;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid black;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-.senSem {
-    width: 49%;
-}
-
-.logo {
-    margin: 0 auto;
-    align-content: center;
-    width: 50%;
-}
-
-.logoImg {
-    width: 100%;
-}
-
-.pokedex {
-    width: 24%;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 1000px) {
-/* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-    
-    .senSem{
-        width: 100%;
+@keyframes fade {
+    from {
+        opacity: 0;
     }
-    
-    .logo {
-        width: 100%;
-    }
-    
-    .pokedex {
-        width: 45%;
-        padding: 5px;
-    }
-
-/* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-/* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
-
-/* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
-    
-    body {
-        font-size: 30px;
+    to {
+        opacity: 1;
     }
 }
 
-.box {
+@keyframes fade2 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: .8;
+    }
+}
+
+
+/*Animation credit: https://www.bitdegree.org/learn/css-animation*/
+
+header h1 {
+    opacity: 0;
+    animation: fade 1s linear .5s 1 normal forwards;
+    margin: 0;
+    color: #fdfcfa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: .1em;
+    border: 2pt solid #fdfcfa;
+    padding: 15px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+header.headerImg {
+    background-image: url("./images/headshot_edit.jpg");
+}
+
+header.interestsImg {
+    background-image: url("./images/coffee_header.jpeg");
+}
+
+header.resumeImg {
+    background-image: url("./images/resume_header.jpeg");
+}
+
+header.photogalleryImg {
+    background-image: url("./images/photogallery_header.jpeg");
+}
+
+p {
+    text-align: justify;
+}
+
+
+/*Horizontal nav*/
+
+.wrapper {
     margin: 0 auto;
     width: 80%;
 }
 
-.boxContent {
-    line-height: 1.5em;
-}
-
-.footer {
+.wrapperFooter {
     margin: 0 auto;
-    width: 100&;
-    padding: 25px;
-    background-color: black;
+    width: 80%;
+    background: #151412;
 }
 
-.footerContent {
-    width: 85%;
-    color: white;
+nav {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    opacity: 100%;
+    background-color: #fdfcfa;
+    border-bottom: 2pt solid #c0a37b;
 }
 
-.a:link, a:visited, a:hover, a:active {
-    color: black;
-    text-decoration: underline;
+nav h1 {
+    display: inline;
+}
+
+
+/*https://www.w3schools.com/howto/howto_js_navbar_sticky.asp*/
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.wrapper {
+    padding-top: 100px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    padding-left: 10px;
+    color: #151412;
+    transition: 0.5s;
+}
+
+ul.b {
+    list-style: none;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li.b {
+    display: inline-block;
+    border: 1pt solid #151412;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 2px;
+    margin: 5px;
+}
+
+
+/*
+header {
+    margin: 0 auto;
+    width: 100%;
+}
+*/
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    margin: auto;
+}
+
+aside p {
+    font-style: italic;
+    text-align: center;
+}
+
+section {
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0px;
+    height: auto;
+    display: flex;
+    clear: both;
+}
+
+.halvesBox {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    justify-content: center;
+}
+
+.thirdsBox {
+    margin: 0 auto;
+    width: 33%;
+    float: right;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+h1,
+h3 {
+    text-align: center;
+    color: #c0a37b;
+}
+
+
+/*
+h2 code fond at https://www.trysmudford.com/blog/css-header-legend/ 
+*/
+
+h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #c0a37b;
+}
+
+h2:before,
+h2:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+h2:after {
+    margin: 0 0 0 20px;
+}
+
+a:link,
+a:visited {
+    color: #151412;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #c0a37b;
+    transition: 0.5s;
+}
+
+footer {
+    margin: 0 auto;
+    min-height: 25px;
+    background-color: #151412;
+    color: #fdfcfa;
+    border-top: 2pt solid #c0a37b;
+    width: 100%;
+}
+
+footer a:link,
+footer a:visited {
+    color: #fdfcfa;
+}
+
+footer a:hover {
+    color: #c0a37b;
+    transition: 0.5s;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    background-color: #151412;
+    color: #fdfcfa;
+    padding: 12px 20px;
+    border: 1pt solid #c0a37b;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #c0a37b;
+    transition: 0.5s;
+}
+
+.currentLink a {
+    color: #c0a37b;
+}
+
+.printNotice {
+    display: none;
 }
