@@ -9,11 +9,17 @@ body {
     font-family: 'Quesha', sans-serif;
     line-height: 1.2em;
     height: 100%;
+	animation: fadeInAnimation 1s linear 1 normal forwards;
 }
 
-html[data-theme='dark'] {
-    background: #000;
-    filter: invert(1) hue-rotate(180deg)
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 
@@ -51,6 +57,7 @@ header {
 }
 
 
+
 /*Animation credit: https://www.bitdegree.org/learn/css-animation*/
 
 header h1 {
@@ -85,6 +92,18 @@ header.photogalleryImg {
     background-image: url("./images/photogallery_header.jpeg");
 }
 
+header.contactMeImg {
+    background-image: url("./images/photogallery_header.jpeg");
+}
+
+header.courseWorkImg {
+    background-image: url("https://financialplanningonline.bu.edu/wp-content/uploads/2016/10/04-1865-047_cfp.jpg");
+}
+
+header.coursWorkDSUImg {
+	background-image: url("https://www.desales.edu/images/default-source/vertical-tabs/fall-walkingcampus.jpg?sfvrsn=c9a9b72b_2");
+}
+
 p {
     text-align: justify;
 }
@@ -94,7 +113,7 @@ p {
 
 .wrapper {
     margin: 0 auto;
-    width: 80%;
+    width: 800px;
 }
 
 .wrapperFooter {
@@ -110,6 +129,8 @@ nav {
     opacity: 100%;
     background-color: #fdfcfa;
     border-bottom: 2pt solid #c0a37b;
+	top: 1;
+	
 }
 
 nav h1 {
@@ -166,6 +187,21 @@ header {
     width: 100%;
 }
 */
+table.courseWork{
+	margin: 0 auto;
+	width: 700px;
+}
+table th{
+	border-bottom: 1pt solid #c0a37b;
+}
+
+table td{
+	text-align: center;
+}
+
+table tfoot{
+	font-style: italic;
+}
 
 img {
     width: 100%;
@@ -273,7 +309,7 @@ footer a:hover {
     transition: 0.5s;
 }
 
-input[type=text],
+input[type=text],input[type=email],
 select,
 textarea {
     width: 100%;
@@ -290,19 +326,28 @@ textarea {
     height: 200px;
 }
 
-input[type=submit] {
+input[type=submit], input[type=reset] {
     background-color: #151412;
     color: #fdfcfa;
     padding: 12px 20px;
-    border: 1pt solid #c0a37b;
+    border: 2pt solid #151412;
     border-radius: 4px;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, input[type=reset]:hover {
     background-color: #c0a37b;
-    transition: 0.5s;
+	border: 2pt solid #c0a37b;
+    transition: 0.25s;
 }
+
+input[type=submit]:active, input[type=reset]:active {
+    background-color: #fdfcfa;
+	color: #c0a37b;
+    transition: 0.25s;
+}
+
+
 
 .currentLink a {
     color: #c0a37b;
