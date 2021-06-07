@@ -9,17 +9,16 @@ body {
     font-family: 'Quesha', sans-serif;
     line-height: 1.2em;
     height: 100%;
-	animation: fadeInAnimation 1s linear 1 normal forwards;
+    animation: fadeInAnimation 1s linear 1 normal forwards;
 }
 
-  
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
-     }
+    }
 }
 
 
@@ -55,7 +54,6 @@ header {
         opacity: .8;
     }
 }
-
 
 
 /*Animation credit: https://www.bitdegree.org/learn/css-animation*/
@@ -101,7 +99,7 @@ header.courseWorkImg {
 }
 
 header.coursWorkDSUImg {
-	background-image: url("https://www.desales.edu/images/default-source/vertical-tabs/fall-walkingcampus.jpg?sfvrsn=c9a9b72b_2");
+    background-image: url("https://www.desales.edu/images/default-source/vertical-tabs/fall-walkingcampus.jpg?sfvrsn=c9a9b72b_2");
 }
 
 p {
@@ -120,6 +118,7 @@ p {
     margin: 0 auto;
     width: 80%;
     background: #151412;
+    padding-bottom: 25px;
 }
 
 nav {
@@ -129,8 +128,7 @@ nav {
     opacity: 100%;
     background-color: #fdfcfa;
     border-bottom: 2pt solid #c0a37b;
-	top: 1;
-	
+    top: 1;
 }
 
 nav h1 {
@@ -187,20 +185,22 @@ header {
     width: 100%;
 }
 */
-table.courseWork{
-	margin: 0 auto;
-	width: 700px;
-}
-table th{
-	border-bottom: 1pt solid #c0a37b;
+
+table.courseWork {
+    margin: 0 auto;
+    width: 700px;
 }
 
-table td{
-	text-align: center;
+table th {
+    border-bottom: 1pt solid #c0a37b;
 }
 
-table tfoot{
-	font-style: italic;
+table td {
+    text-align: center;
+}
+
+table tfoot {
+    font-style: italic;
 }
 
 img {
@@ -309,7 +309,8 @@ footer a:hover {
     transition: 0.5s;
 }
 
-input[type=text],input[type=email],
+input[type=text],
+input[type=email],
 select,
 textarea {
     width: 100%;
@@ -326,7 +327,8 @@ textarea {
     height: 200px;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit],
+input[type=reset] {
     background-color: #151412;
     color: #fdfcfa;
     padding: 12px 20px;
@@ -335,19 +337,19 @@ input[type=submit], input[type=reset] {
     cursor: pointer;
 }
 
-input[type=submit]:hover, input[type=reset]:hover {
+input[type=submit]:hover,
+input[type=reset]:hover {
     background-color: #c0a37b;
-	border: 2pt solid #c0a37b;
+    border: 2pt solid #c0a37b;
     transition: 0.25s;
 }
 
-input[type=submit]:active, input[type=reset]:active {
+input[type=submit]:active,
+input[type=reset]:active {
     background-color: #fdfcfa;
-	color: #c0a37b;
+    color: #c0a37b;
     transition: 0.25s;
 }
-
-
 
 .currentLink a {
     color: #c0a37b;
