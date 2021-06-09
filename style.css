@@ -2,7 +2,7 @@
 html,
 body {
     margin: 0 auto;
-    font-size: 24pt;
+    font-size: 20pt;
     padding: 0px;
     color: #151412;
     background-color: #fdfcfa;
@@ -34,18 +34,11 @@ header {
     text-align: center;
     position: relative;
     transition: 1s;
-    animation: fade2 1s linear .5s 1 normal forwards;
+    /*animation: fade2 1s linear .5s 1 normal forwards;*/
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
+/*
 @keyframes fade2 {
     from {
         opacity: 1;
@@ -54,13 +47,14 @@ header {
         opacity: .8;
     }
 }
+*/
 
 
 /*Animation credit: https://www.bitdegree.org/learn/css-animation*/
 
 header h1 {
     opacity: 0;
-    animation: fade 1s linear .5s 1 normal forwards;
+    animation: fade .5s linear 1s 1 normal forwards;
     margin: 0;
     color: #fdfcfa;
     position: absolute;
@@ -72,6 +66,15 @@ header h1 {
     padding: 15px;
     background-color: gray;
     border-radius: 5px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 header.headerImg {
@@ -186,17 +189,37 @@ header {
 }
 */
 
-table.courseWork {
+table {
     margin: 0 auto;
     width: 700px;
+	border-collapse: collapse; /* No disconnect for td border-bottom */
 }
 
+table.resumeTable {
+	text-align: left;
+	
+}
+
+table.resumeTable th, table.resumeTable td  {
+	border-bottom: 0px solid #c0a37b;
+	text-align: left;
+	vertical-align: top;
+	padding-top:10px;
+}
+
+table.resumeTable tfoot td {
+	text-align: center;
+}
+
+
 table th {
-    border-bottom: 1pt solid #c0a37b;
+    border-bottom: 1px solid #c0a37b;
 }
 
 table td {
     text-align: center;
+	width: 33%;
+	border-bottom: 1px solid #151412;
 }
 
 table tfoot {
@@ -324,7 +347,7 @@ textarea {
 }
 
 textarea {
-    height: 200px;
+    height: 100px;
 }
 
 input[type=submit],
