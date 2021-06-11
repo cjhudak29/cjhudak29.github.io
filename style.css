@@ -12,6 +12,13 @@ body {
    /* animation: fadeInAnimation 1s linear 1 normal forwards;*/
 }
 
+@font-face {
+    font-family: 'Quesha';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Quesha'), url('https://fonts.cdnfonts.com/s/22658/Quesha.woff') format('woff');
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
