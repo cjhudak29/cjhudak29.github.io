@@ -9,7 +9,7 @@ body {
     font-family: 'Quesha', sans-serif;
     line-height: 1.2em;
     height: 100%;
-    animation: fadeInAnimation 1s linear 1 normal forwards;
+   /* animation: fadeInAnimation 1s linear 1 normal forwards;*/
 }
 
 @keyframes fadeInAnimation {
@@ -34,7 +34,7 @@ header {
     text-align: center;
     position: relative;
     transition: 1s;
-    /*animation: fade2 1s linear .5s 1 normal forwards;*/
+    animation: fade2 1s linear .5s 1 normal forwards;
 }
 
 
@@ -247,6 +247,8 @@ section {
     height: auto;
     display: flex;
     clear: both;
+	align-items:center;
+	justify-content: center;
 }
 
 .halvesBox {
@@ -261,8 +263,9 @@ section {
 .thirdsBox {
     margin: 0 auto;
     width: 33%;
-    float: right;
+    float: middle;
     padding: 15px;
+	display: inline-block;
 }
 
 table {
@@ -330,6 +333,11 @@ footer a:visited {
 footer a:hover {
     color: #c0a37b;
     transition: 0.5s;
+}
+
+.icon{
+	width: 25px;
+	height: 25px;
 }
 
 input[type=text],

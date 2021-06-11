@@ -45,21 +45,20 @@
         </div>
         <section>
             <h2>Get in Touch!</h2>
+			<p>Check out my <a href="https://www.linkedin.com/in/christopherjhudak/" target="_blank">Linkedin</a> and <a href="https://github.com/cjhudak29?tab=repositories" target="_blank">github</a> to see more of my work and experience. Leave a message for me, too!</p>
             <script src="scripts/formvalidation.js"></script>
-            <form name="Form" id="Form" method="post" action="" onsubmit="return validateForm();">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="John" required>
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-                <label for="emailAddress">Email Address</label>
-                <input type="email" id="emailAddress" name="emailAddress" placeholder="jdoe@email.com" required>
-                <label for="message">Message</label>
+            <form name="Form" id="Form" method="post" action="https://formspree.io/f/xdoyzaja" onsubmit="return validateForm();">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="Email address" required>
                 <textarea id="message" name="message" placeholder="Your Message Here" required></textarea>
                 <input type="submit" name="submitButton" value="Submit">
                 <input type="reset" name="resetButton" value="Reset"> </form>
-            <h3 id="errorMessage"><br>
-                <h3>
+            <h3 id="errorMessage"><br></h3>
         </section>
+		<aside>
+		<p>he form is powered by Formspree. Upon a successful completion, you will be redirected to a page that indicates a successful submission along with a link to return to the Contact Me page. You will see that your entered text is still there. Do not worry, your submission was still received!</p>
+		</aside>
     </div>
     <footer>
         <div class="wrapperFooter">

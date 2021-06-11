@@ -3,9 +3,10 @@ function validateForm(){
 	var firstName = document.getElementById('firstName');
     var lastName = document.getElementById('lastName');
     var emailAddress = document.getElementById('emailAddress');
+	var contactForm = document.getElementById('Form');
     var letters = /^[A-Za-z]+$/;
 	
-	if (firstName.value.length <= 2) {
+	if (firstName.value.length < 2) {
         /* triggered if the length of firstName is two characters or less */
         alert('Sorry: First name must contain two (2) or more characters.');
         changeIt();
@@ -30,6 +31,11 @@ function validateForm(){
         lastName.focus();
         return false;
     }
+	else {
+		
+		return true;
+		
+	}
 }
 
 function changeIt() {
