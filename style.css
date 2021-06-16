@@ -9,7 +9,7 @@ body {
     font-family: 'Quesha', sans-serif;
     line-height: 1.2em;
     height: 100%;
-   /* animation: fadeInAnimation 1s linear 1 normal forwards;*/
+    /* animation: fadeInAnimation 1s linear 1 normal forwards;*/
 }
 
 @font-face {
@@ -33,7 +33,7 @@ body {
 
 header {
     min-height: 75%;
-	height:75%;
+    height: 75%;
     opacity: 1;
     background-attachment: fixed;
     background-position: center;
@@ -43,16 +43,14 @@ header {
     position: relative;
     transition: 1s;
     animation: fade2 1s linear .5s 1 normal forwards;
-	
 }
 
-
 header.headerImg {
-    background-image: url("./images/headshot_edit_compressed.jpg");
+    background-image: url("./images/headshot_edit.jpg");
 }
 
 header.interestsImg {
-    background-image: url("./images/coffee_header.jpeg");
+    background-image: url("./images/interests_header.png");
 }
 
 header.resumeImg {
@@ -64,12 +62,13 @@ header.photogalleryImg {
 }
 
 header.contactMeImg {
-    background-image: url("./images/photogallery_header.jpeg");
+    background-image: url("./images/contactMe_header.png");
 }
 
 header.courseWorkImg {
     background-image: url("https://financialplanningonline.bu.edu/wp-content/uploads/2016/10/04-1865-047_cfp.jpg");
 }
+
 
 /*
 @keyframes fade2 {
@@ -110,9 +109,6 @@ header h1 {
     }
 }
 
-
-
-
 p {
     text-align: justify;
 }
@@ -122,12 +118,12 @@ p {
 
 .wrapper {
     margin: 0 auto;
-    width: 80%;
+    width: 1000px;
 }
 
 .wrapperFooter {
     margin: 0 auto;
-    width: 80%;
+    width: 1000px;
     background: #151412;
     padding-bottom: 25px;
 }
@@ -140,7 +136,7 @@ nav {
     background-color: #fdfcfa;
     border-bottom: 2pt solid #c0a37b;
     top: 1;
-	width:100%
+    width: 100%
 }
 
 
@@ -167,7 +163,7 @@ nav li {
 nav a {
     display: inline;
     padding-left: 5px;
-	padding-right: 5px;
+    padding-right: 5px;
     color: #151412;
     transition: 0.5s;
 }
@@ -198,25 +194,25 @@ header {
 table {
     margin: 0 auto;
     width: 700px;
-	border-collapse: collapse; /* No disconnect for td border-bottom */
+    border-collapse: collapse;
+    /* No disconnect for td border-bottom */
 }
 
 table.resumeTable {
-	text-align: left;
-	
+    text-align: left;
 }
 
-table.resumeTable th, table.resumeTable td  {
-	border-bottom: 0px solid #c0a37b;
-	text-align: left;
-	vertical-align: top;
-	padding-top:10px;
+table.resumeTable th,
+table.resumeTable td {
+    border-bottom: 0px solid #c0a37b;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 10px;
 }
 
 table.resumeTable tfoot td {
-	text-align: center;
+    text-align: center;
 }
-
 
 table th {
     border-bottom: 1px solid #c0a37b;
@@ -224,8 +220,8 @@ table th {
 
 table td {
     text-align: center;
-	width: 33%;
-	border-bottom: 1px solid #151412;
+    width: 33%;
+    border-bottom: 1px solid #151412;
 }
 
 table tfoot {
@@ -253,8 +249,8 @@ section {
     height: auto;
     display: flex;
     clear: both;
-	align-items:center;
-	justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .halvesBox {
@@ -269,9 +265,19 @@ section {
 .thirdsBox {
     margin: 0 auto;
     width: 33%;
-    float: middle;
+    height: auto;
+    float: left;
     padding: 15px;
-	display: inline-block;
+    justify-content: center;
+}
+
+.fourthsBox {
+    margin: 0 auto;
+    width: 25%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    justify-content: center;
 }
 
 table {
@@ -341,9 +347,9 @@ footer a:hover {
     transition: 0.5s;
 }
 
-.icon{
-	width: 25px;
-	height: 25px;
+.icon {
+    width: 25px;
+    height: 25px;
 }
 
 input[type=text],
