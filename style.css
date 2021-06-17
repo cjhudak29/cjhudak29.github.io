@@ -50,7 +50,7 @@ header.headerImg {
 }
 
 header.interestsImg {
-    background-image: url("./images/interests_header.png");
+    background-image: url("./images/interests/interests_header.png");
 }
 
 header.resumeImg {
@@ -58,7 +58,7 @@ header.resumeImg {
 }
 
 header.photogalleryImg {
-    background-image: url("./images/photogallery_header.jpeg");
+    background-image: url("./images/photogallery/photogallery_header.jpeg");
 }
 
 header.contactMeImg {
