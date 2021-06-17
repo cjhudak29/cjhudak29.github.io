@@ -46,23 +46,23 @@ header {
 }
 
 header.headerImg {
-    background-image: url("./images/headshot_edit.jpg");
+    background-image: url("./images/headers/compressed/headshot_edit.jpg");
 }
 
 header.interestsImg {
-    background-image: url("./images/interests/interests_header.png");
+    background-image: url("./images/headers/compressed/interests_header.jpg");
 }
 
 header.resumeImg {
-    background-image: url("./images/resume_header.jpeg");
+    background-image: url("./images/headers/compressed/resume_header.jpg");
 }
 
 header.photogalleryImg {
-    background-image: url("./images/photogallery/photogallery_header.jpeg");
+    background-image: url("./images/headers/compressed/photogallery_header.jpg");
 }
 
 header.contactMeImg {
-    background-image: url("./images/contactMe_header.png");
+    background-image: url("./images/headers/compressed/contactMe_header.jpg");
 }
 
 header.courseWorkImg {
