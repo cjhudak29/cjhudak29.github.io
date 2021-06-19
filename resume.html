@@ -21,20 +21,23 @@
     </header>
     <nav id="navbar">
         <script src="scripts/navbar.js"></script>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="interests.html">Interests</a></li>
-            <li class="currentLink"><a href="resume.html">Resume</a></li>
-            <li><a href="coursework.html">Course Work</a></li>
-            <li><a href="photo_gallery.html">Photo Gallery</a></li>
-            <li><a href="contactMe.html">Contact Me</a></li>
-        </ul>
+        <div class="app">
+            <ul>
+                <li><a href="index.html">{{page1}}</a></li>
+                <li><a href="interests.html">{{page2}}</a></li>
+                <li class="currentLink"><a href="resume.html">{{page3}}</a></li>
+                <li><a href="coursework.html">{{page4}}</a></li>
+                <li><a href="photo_gallery.html">{{page5}}</a></li>
+                <li><a href="contactMe.html">{{page6}}</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="wrapper">
         <div class="printNotice">
             <img src="./images/headers/resume_header.jpeg" alt="Ribons">
             <h1>Resume</h1>
             <nav>
+                <script src="scripts/navbar.js"></script>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="interests.html">Interests</a></li>
@@ -109,6 +112,9 @@
         </section>
         <section>
             <h2>Education</h2>
+            <div id="edu">
+
+            </div>
             <table class="resumeTable">
                 <tbody>
                     <tr>

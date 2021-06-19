@@ -1,5 +1,5 @@
 var app = new Vue({
-    el: 'header',
+    el: 'h1',
     data: {
         page1: 'Christopher Hudak',
         page2: 'Interests',
