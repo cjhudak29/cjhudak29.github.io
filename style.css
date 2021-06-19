@@ -34,6 +34,7 @@ body {
 header {
     min-height: 75%;
     height: 75%;
+    width: 100%;
     opacity: 1;
     background-attachment: fixed;
     background-position: center;
