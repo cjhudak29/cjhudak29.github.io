@@ -118,12 +118,12 @@ p {
 
 .wrapper {
     margin: 0 auto;
-    width: 1000px;
+    width: 80%;
 }
 
 .wrapperFooter {
     margin: 0 auto;
-    width: 1000px;
+    width: 80%;
     background: #151412;
     padding-bottom: 25px;
 }
@@ -288,7 +288,7 @@ section {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
 }
 
 table {
@@ -411,14 +411,4 @@ input[type=reset]:active {
 
 .printNotice {
     display: none;
-}
-
-@media only screen and (min-width: 1300px) {
-    /* For tablets: */
-    .wrapper {
-        width: 90%;
-    }
-    .wrapperFooter {
-        width: 90%;
-    }
 }
