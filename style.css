@@ -32,14 +32,13 @@ body {
 /*Applied Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 header {
-    min-height: 75%;
-    height: 75%;
+    min-height: 50%;
     width: 100%;
     opacity: 1;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     text-align: center;
     position: relative;
     transition: 1s;
