@@ -438,7 +438,9 @@ input[type=reset]:active {
         padding: 0px;
     }
     img {
-        padding: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+        height: auto;
     }
     header {
         display: none;
