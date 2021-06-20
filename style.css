@@ -229,6 +229,7 @@ table tfoot {
 
 img {
     width: 100%;
+    height: auto;
     vertical-align: middle;
     margin: auto;
 }
@@ -429,6 +430,9 @@ input[type=reset]:active {
     .fourthsBox {
         width: 90%;
         padding: 0px;
+    }
+    img {
+        padding: 5px;
     }
     header {
         display: none;
