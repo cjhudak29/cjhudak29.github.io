@@ -38,7 +38,7 @@ function validateForm() {
         message.focus();
         return false;
     } else {
-
+        document.getElementById('errorMessage').innerHTML = '';
         return true;
 
     }
