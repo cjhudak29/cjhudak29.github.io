@@ -1,72 +1,72 @@
 @import url('https://fonts.cdnfonts.com/s/22658/Quesha.woff');
 html,
 body {
-	margin: 0 auto;
-	font-size: 20pt;
-	padding: 0px;
-	color: #151412;
-	background-color: #fdfcfa;
-	font-family: 'Quesha', sans-serif;
-	line-height: 1.2em;
-	height: 100%;
-	/* animation: fadeInAnimation 1s linear 1 normal forwards;*/
+    margin: 0 auto;
+    font-size: 20pt;
+    padding: 0px;
+    color: #151412;
+    background-color: #fdfcfa;
+    font-family: 'Quesha', sans-serif;
+    line-height: 1.2em;
+    height: 100%;
+    /* animation: fadeInAnimation 1s linear 1 normal forwards;*/
 }
 
 @font-face {
-	font-family: 'Quesha';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Quesha'), url('https://fonts.cdnfonts.com/s/22658/Quesha.woff') format('woff');
+    font-family: 'Quesha';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Quesha'), url('https://fonts.cdnfonts.com/s/22658/Quesha.woff') format('woff');
 }
 
 @keyframes fadeInAnimation {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
 /*Applied Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 header {
-	min-height: 75%;
-	height: 75%;
-	opacity: 1;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-	position: relative;
-	transition: 1s;
-	animation: fade2 1s linear .5s 1 normal forwards;
+    min-height: 75%;
+    height: 75%;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    transition: 1s;
+    animation: fade2 1s linear .5s 1 normal forwards;
 }
 
 header.headerImg {
-	background-image: url("./images/headers/compressed/headshot_edit.jpg");
+    background-image: url("./images/headers/compressed/headshot_edit.jpg");
 }
 
 header.interestsImg {
-	background-image: url("./images/headers/compressed/interests_header.jpg");
+    background-image: url("./images/headers/compressed/interests_header.jpg");
 }
 
 header.resumeImg {
-	background-image: url("./images/headers/compressed/resume_header.jpg");
+    background-image: url("./images/headers/compressed/resume_header.jpg");
 }
 
 header.photogalleryImg {
-	background-image: url("./images/headers/compressed/photogallery_header.jpg");
+    background-image: url("./images/headers/compressed/photogallery_header.jpg");
 }
 
 header.contactMeImg {
-	background-image: url("./images/headers/compressed/contactMe_header.jpg");
+    background-image: url("./images/headers/compressed/contactMe_header.jpg");
 }
 
 header.courseWorkImg {
-	background-image: url("https://financialplanningonline.bu.edu/wp-content/uploads/2016/10/04-1865-047_cfp.jpg");
+    background-image: url("https://financialplanningonline.bu.edu/wp-content/uploads/2016/10/04-1865-047_cfp.jpg");
 }
 
 
@@ -85,57 +85,57 @@ header.courseWorkImg {
 /*Animation credit: https://www.bitdegree.org/learn/css-animation*/
 
 header h1 {
-	opacity: 0;
-	animation: fade .5s linear 1s 1 normal forwards;
-	margin: 0;
-	color: #fdfcfa;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	letter-spacing: .1em;
-	border: 2pt solid #fdfcfa;
-	padding: 15px;
-	background-color: gray;
-	border-radius: 5px;
+    opacity: 0;
+    animation: fade .5s linear 1s 1 normal forwards;
+    margin: 0;
+    color: #fdfcfa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: .1em;
+    border: 2pt solid #fdfcfa;
+    padding: 15px;
+    background-color: gray;
+    border-radius: 5px;
 }
 
 @keyframes fade {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 p {
-	text-align: justify;
+    text-align: justify;
 }
 
 
 /*Horizontal nav*/
 
 .wrapper {
-	margin: 0 auto;
-	width: 1000px;
+    margin: 0 auto;
+    width: 1000px;
 }
 
 .wrapperFooter {
-	margin: 0 auto;
-	width: 1000px;
-	background: #151412;
-	padding-bottom: 25px;
+    margin: 0 auto;
+    width: 1000px;
+    background: #151412;
+    padding-bottom: 25px;
 }
 
 nav {
-	list-style: none;
-	text-align: center;
-	overflow: hidden;
-	opacity: 100%;
-	background-color: #fdfcfa;
-	border-bottom: 2pt solid #c0a37b;
-	width: 100%
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    opacity: 100%;
+    background-color: #fdfcfa;
+    border-bottom: 2pt solid #c0a37b;
+    width: 100%
 }
 
 
@@ -145,41 +145,41 @@ nav {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 
 .sticky {
-	margin: 0 auto;
-	position: fixed;
-	top: 0;
-	width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .sticky+.wrapper {
-	padding-top: 100px;
+    padding-top: 100px;
 }
 
 nav li {
-	display: inline;
+    display: inline;
 }
 
 nav a {
-	display: inline;
-	padding-left: 5px;
-	padding-right: 5px;
-	color: #151412;
-	transition: 0.5s;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #151412;
+    transition: 0.5s;
 }
 
 ul.b {
-	list-style: none;
-	margin: 0 auto;
-	text-align: left;
+    list-style: none;
+    margin: 0 auto;
+    text-align: left;
 }
 
 li.b {
-	display: inline-block;
-	border: 1pt solid #151412;
-	border-radius: 5px;
-	padding-left: 5px;
-	padding-right: 2px;
-	margin: 5px;
+    display: inline-block;
+    border: 1pt solid #151412;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 2px;
+    margin: 5px;
 }
 
 
@@ -191,114 +191,115 @@ header {
 */
 
 table {
-	margin: 0 auto;
-	width: 700px;
-	border-collapse: collapse;
-	/* No disconnect for td border-bottom */
+    margin: 0 auto;
+    width: 700px;
+    border-collapse: collapse;
+    /* No disconnect for td border-bottom */
 }
 
 table.resumeTable {
-	text-align: left;
+    text-align: left;
 }
 
 table.resumeTable th,
 table.resumeTable td {
-	border-bottom: 0px solid #c0a37b;
-	text-align: left;
-	vertical-align: top;
-	padding-top: 10px;
+    border-bottom: 0px solid #c0a37b;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 10px;
 }
 
 table.resumeTable tfoot td {
-	text-align: center;
+    text-align: center;
 }
 
 table th {
-	border-bottom: 1px solid #c0a37b;
+    border-bottom: 1px solid #c0a37b;
 }
 
 table td {
-	text-align: center;
-	width: 33%;
-	border-bottom: 1px solid #151412;
+    text-align: center;
+    width: 33%;
+    border-bottom: 1px solid #151412;
 }
 
 table tfoot {
-	font-style: italic;
+    font-style: italic;
 }
 
 img {
-	width: 100%;
-	vertical-align: middle;
-	margin: auto;
+    width: 100%;
+    vertical-align: middle;
+    margin: auto;
 }
 
 aside p {
-	font-style: italic;
-	text-align: center;
+    font-style: italic;
+    text-align: center;
 }
 
 section {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .container {
-	margin: 0 auto;
-	padding: 0px;
-	height: auto;
-	display: flex;
-	clear: both;
-	align-items: center;
-	justify-content: center;
+    margin: 0 auto;
+    padding: 0px;
+    height: auto;
+    display: flex;
+    clear: both;
+    align-items: center;
+    justify-content: center;
 }
 
 .halvesBox {
-	margin: 0 auto;
-	width: 50%;
-	height: auto;
-	float: left;
-	padding: 15px;
-	justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    justify-content: center;
+    clear: both;
 }
 
 .thirdsBox {
-	margin: 0 auto;
-	width: 33%;
-	height: auto;
-	float: left;
-	padding: 15px;
-	justify-content: center;
+    margin: 0 auto;
+    width: 33%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    justify-content: center;
 }
 
 .fourthsBox {
-	margin: 0 auto;
-	width: 25%;
-	height: auto;
-	float: left;
-	padding: 15px;
-	justify-content: center;
+    margin: 0 auto;
+    width: 25%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    justify-content: center;
 }
 
 .grid-item {
-  padding: 10px;
-  text-align: center;
-  width:30%;
-  justify-content: center;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    justify-content: center;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 table {
-	width: 100%;
+    width: 100%;
 }
 
 h1,
 h3 {
-	text-align: center;
-	color: #c0a37b;
+    text-align: center;
+    color: #c0a37b;
 }
 
 
@@ -307,108 +308,149 @@ h2 code fond at https://www.trysmudford.com/blog/css-header-legend/
 */
 
 h2 {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: #c0a37b;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #c0a37b;
 }
 
 h2:before,
 h2:after {
-	content: '';
-	border-top: 2px solid;
-	margin: 0 20px 0 0;
-	flex: 1 0 20px;
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
 }
 
 h2:after {
-	margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
 }
 
 a:link,
 a:visited {
-	color: #151412;
-	text-decoration: none;
-	font-weight: bold;
+    color: #151412;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-	color: #c0a37b;
-	transition: 0.5s;
+    color: #c0a37b;
+    transition: 0.5s;
 }
 
 footer {
-	margin: 0 auto;
-	min-height: 25px;
-	background-color: #151412;
-	color: #fdfcfa;
-	border-top: 2pt solid #c0a37b;
-	width: 100%;
+    margin: 0 auto;
+    min-height: 25px;
+    background-color: #151412;
+    color: #fdfcfa;
+    border-top: 2pt solid #c0a37b;
+    width: 100%;
 }
 
 footer a:link,
 footer a:visited {
-	color: #fdfcfa;
+    color: #fdfcfa;
 }
 
 footer a:hover {
-	color: #c0a37b;
-	transition: 0.5s;
+    color: #c0a37b;
+    transition: 0.5s;
 }
 
 .icon {
-	width: 25px;
-	height: 25px;
+    width: 25px;
+    height: 25px;
 }
 
 input[type=text],
 input[type=email],
 select,
 textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
 textarea {
-	height: 100px;
+    height: 100px;
 }
 
 input[type=submit],
 input[type=reset] {
-	background-color: #151412;
-	color: #fdfcfa;
-	padding: 12px 20px;
-	border: 2pt solid #151412;
-	border-radius: 4px;
-	cursor: pointer;
+    background-color: #151412;
+    color: #fdfcfa;
+    padding: 12px 20px;
+    border: 2pt solid #151412;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background-color: #c0a37b;
-	border: 2pt solid #c0a37b;
-	transition: 0.25s;
+    background-color: #c0a37b;
+    border: 2pt solid #c0a37b;
+    transition: 0.25s;
 }
 
 input[type=submit]:active,
 input[type=reset]:active {
-	background-color: #fdfcfa;
-	color: #c0a37b;
-	transition: 0.25s;
+    background-color: #fdfcfa;
+    color: #c0a37b;
+    transition: 0.25s;
 }
 
 .currentLink a {
-	color: #c0a37b;
+    color: #c0a37b;
 }
 
 .printNotice {
-	display: none;
+    display: none;
+}
+
+@media screen and (max-width: 460px) {
+    .wrapper {
+        width: 80%;
+    }
+    .wrapperFooter {
+        width: 80%;
+    }
+    .container {
+        display: block;
+    }
+    .halvesBox,
+    .thirdsBox,
+    .fourthsBox {
+        width: 90%;
+        padding: 0px;
+    }
+    header {
+        display: none;
+    }
+    .printNotice {
+        display: block;
+    }
+    #navbar {
+        display: none;
+    }
+    nav li {
+        padding: 0px;
+    }
+    table {
+        width: 100%;
+    }
+    .grid-container {
+        display: block;
+        width: 100%;
+    }
+    .grid-item {
+        width: 100%;
+        ;
+    }
 }
