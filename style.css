@@ -462,12 +462,20 @@ input[type=reset]:active {
     }
     .grid-container {
         display: inline-block;
-        width: 100%;
         justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0px;
     }
     .grid-item {
-        width: 45%;
-        padding: 5px;
-        height: inherit;
+        padding: 0px;
+        width: 49%;
+        margin: 0 auto;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .grid-item img {
+        width: 100%;
+        padding: 0px;
     }
 }
