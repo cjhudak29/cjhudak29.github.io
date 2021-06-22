@@ -4,7 +4,7 @@ var app = new Vue({
         page1: 'Christopher Hudak',
         page2: 'Interests',
         page3: 'Resume',
-        page4: 'Course Work',
+        page4: 'Coursework',
         page5: 'Photo Gallery',
         page6: 'Contact Me'
     }
